@@ -79,13 +79,15 @@ int main()
             }
             else
             {
+                heroe.recibirAtaque(esbirro.getAtaque()); // el heroe recibe el ataque del esbirro
+                if (heroe.getVida() <= 0)
+                {
+                    break;
+                }
                 // si vive y no se divide, lo vuelvo a poner en la cola
                 q.push(esbirro);
             }
         }
-
-        // El esbirro ataca al heroe
-        heroe.recibirAtaque(esbirro.getAtaque());
     }
 
     cout << "\n"
