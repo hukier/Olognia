@@ -55,8 +55,11 @@ int main()
 
         // El heroe ataca al esbirro
         int ataqueActual = heroe.getAtaque();
+        int vidaAntes = esbirro.getVida(); // guardo la vida antes de recibir el ataque
         esbirro.recibirAtaque(ataqueActual);
-        DamageTotal += ataqueActual; // Acumulo el daño hecho por el heroe
+
+        int damageInfligido = min(vidaAntes, ataqueActual); // daño infligido al esbirro
+        DamageTotal += damageInfligido;                     // Acumulo el daño hecho por el heroe
 
         // Ver si murio el esbirro
         if (esbirro.getVida() <= 0)
