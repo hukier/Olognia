@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe compilar archivo activo",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "--std=c++17",
+                "main.cpp",
+                "Esbirro.cpp",
+                "Heroe.cpp",
+                "-o",
+                "main.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
