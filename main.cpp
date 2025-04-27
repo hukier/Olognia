@@ -50,7 +50,7 @@ int main()
 
     while (!q.empty() && heroe.getVida() > 0)
     {
-        Esbirro esbirro = q.front(); // saco
+        Esbirro esbirro = q.front(); // obtengo el esbirro de la cola
         q.pop();                     // saco el esbirro de la cola
 
         // El heroe ataca al esbirro
@@ -64,7 +64,7 @@ int main()
         // Ver si murio el esbirro
         if (esbirro.getVida() <= 0)
         {
-            heroe.sumarKill();
+            heroe.sumarKill(); // el heroe suma un kill para la mejora del arco
         }
         else
         {
