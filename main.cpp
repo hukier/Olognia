@@ -83,11 +83,6 @@ int main()
 
         // El esbirro ataca al heroe
         heroe.recibirAtaque(esbirro.getAtaque());
-        if (heroe.getVida() <= 0)
-        {
-            cout << "RIP mechón" << endl;
-            return 0; // El heroe ha muerto, termina la simulacion
-        }
     }
 
     cout << "\n"
